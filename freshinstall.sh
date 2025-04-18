@@ -44,3 +44,6 @@ sudo rm -rf "neovim"
 
 #---Install zip
 sudo apt install zip -y
+
+#---Install ripgrep
+sudo apt install ripgrep -y
