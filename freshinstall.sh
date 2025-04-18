@@ -36,4 +36,11 @@ sudo apt install zsh -y
 # Updating default shell
 echo ">>>Updating default shell to zsh<<<"
 chsh -s $(which zsh)
+grep -qxF "alias vim='nvim'" ~/.zshrc || echo "alias vim='nvim'" >> ~/.zshrc
 echo ">>>Update success<<<"
+
+#---Remove neovim build folder
+sudo rm -rf "neovim"
+
+#---Install zip
+sudo apt install zip -y
